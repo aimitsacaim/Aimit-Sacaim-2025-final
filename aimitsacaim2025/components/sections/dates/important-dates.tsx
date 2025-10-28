@@ -40,27 +40,33 @@ export default function ImportantDates() {
   <table className="w-full border-collapse">
     {/* Table Header */}
     <thead>
-      <tr>
-        <th className="p-4 text-center text-xl font-bold border-b border-gray-300" style={{
-          fontFamily: "'Raleway', sans-serif",
-          fontWeight: 700,
-          color: "rgb(47, 77, 90)",
-          fontSize: "22px",
-          lineHeight: "26px"
-        }}>
-          EVENTS
-        </th>
-        <th className="p-4 text-center text-xl font-bold border-b border-gray-300" style={{
-          fontFamily: "'Raleway', sans-serif",
-          fontWeight: 700,
-          color: "rgb(47, 77, 90)",
-          fontSize: "22px",
-          lineHeight: "26px"
-        }}>
-          DATES
-        </th>
-      </tr>
-    </thead>
+  <tr>
+    <th
+      className="p-4 text-left text-xl font-bold border-b border-gray-300"
+      style={{
+        fontFamily: "'Raleway', sans-serif",
+        fontWeight: 700,
+        color: "rgb(47, 77, 90)",
+        fontSize: "22px",
+        lineHeight: "26px"
+      }}
+    >
+      EVENTS
+    </th>
+    <th
+      className="p-4 text-center text-xl font-bold border-b border-gray-300"
+      style={{
+        fontFamily: "'Raleway', sans-serif",
+        fontWeight: 700,
+        color: "rgb(47, 77, 90)",
+        fontSize: "22px",
+        lineHeight: "26px"
+      }}
+    >
+      DATES
+    </th>
+  </tr>
+</thead>
     {/* Table Body */}
     <tbody>
       {dates.map((item, index) => (

@@ -12,14 +12,14 @@ const conferenceRoles = [
     heading: 'Patron',
     name: 'Rev. Dr Kiran Cotha SJ',
     title: 'Director',
-    institution: 'AIMIT Centre',
+    institution: 'AIMIT Centre, St Aloysius (Deemed to be University)',
     image: '/chairs/Kiran.png',
   },
   {
     heading: 'General Chair',
     name: 'Dr Hemalatha N',
     title: 'Dean, School of Information Science & Technology,',
-    institution: ' St Aloysius (Deemed to be University)',
+    institution: 'St Aloysius (Deemed to be University)',
     image: '/chairs/hemalatha.png',
   },
 ];
