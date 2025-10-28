@@ -32,8 +32,8 @@ export default function Footer() {
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-[1rem] pb-6">
 
-          {/* Left Info Card (matches screenshot) */}
-         <div className="bg-white p-8 rounded-none text-[#263948] shadow-lg border border-[#e0eef3] flex flex-col items-center text-center min-h-[480px] max-w-[440px] mx-auto mt-[-40px]">
+          {/* Left Info Card - MUCH WIDER */}
+          <div className="bg-white p-8 rounded-none text-[#263948] shadow-lg border border-[#e0eef3] flex flex-col items-center text-center min-h-[480px] max-w-[700px] w-full mx-auto mt-[-40px]">
             {/* Logo and Title */}
             <Image
               src="/logo/icaih-logo.png"
@@ -148,9 +148,9 @@ export default function Footer() {
             <iframe
               title="St Aloysius Institute of Management and IT Map"
               src="https://www.google.com/maps?q=St+Aloysius+Institute+of+Management+and+Information+Technology+Beeri+Kotekar+Mangaluru&hl=en&z=16&output=embed"
-              width="320"
-              height="220"
-              className="border-0 rounded-lg"
+              width="450"
+              height="350"
+              className="border-0 rounded-none"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
