@@ -2,15 +2,15 @@
 
 const conveners = [
   {
-    name: 'Dr Hemalatha N',
-    title: 'Dean',
-    institution: 'School of Information Science & Technology St Aloysius (Deemed to be University) Institute of Management and IT',
+    name: 'Ms Nausheeda B S',
+    title: 'Assistant Professor',
+    institution: 'SIST, St Aloysius (Deemed to be University) Institute of Management and IT',
     image: '/conveners/naushida-white-bg.png',
   },
   {
-    name: 'Dr Rakesh Kumar',
-    title: 'Associate Professor, HOD (MSc BDA & Data Science)',
-    institution: 'School of Information Science & Technology St Aloysius (Deemed to be University) Institute of Management and IT',
+    name: 'Ms Gana K V',
+    title: 'Assistant Professor',
+    institution: 'SIST, St Aloysius (Deemed to be University) Institute of Management and IT',
     image: '/conveners/gana-white-bg.png',
   },
 ];
@@ -22,11 +22,11 @@ interface ConvenerCardProps {
   image?: string; // Optional, as your data doesn't have an image
 }
     
-function ConvenerCard({ name, title, institution, image }: ConvenerCardProps    ) {
+function ConvenerCard({ name, title, institution, image }: ConvenerCardProps) {
   return (
-    <div className="flex flex-col items-center w-[432px] mx-auto group">
+    <div className="flex flex-col items-center w-[300px] mx-auto group">
       {/* Image Card */}
-      <div className="w-[432px] h-[522px] overflow-hidden shadow-md bg-white z-10 relative">
+      <div className="w-[360px] h-[500px] overflow-hidden shadow-md bg-white z-10 relative rounded-xl">
         <img
           src={image || "/images/speakers/default.jpg"}
           alt={name}
@@ -35,26 +35,18 @@ function ConvenerCard({ name, title, institution, image }: ConvenerCardProps    
       </div>
       {/* Info Card */}
       <div
-        className={`
-          bg-white shadow-lg px-8 pt-6 pb-5
-          flex flex-col items-center
-          -mt-24
-          transition-all duration-300
-          w-[400px] group-hover:w-[415px]
-          relative z-20
-        `}
+        className="bg-white shadow-lg px-5 pt-5 pb-4 flex flex-col items-center -mt-14 transition-all duration-300 w-[310px] group-hover:w-[330px] relative z-20 rounded-xl"
         style={{ minWidth: 0 }}
       >
         <h3
           style={{
             fontFamily: "'Raleway', sans-serif",
             fontWeight: 700,
-            fontStyle: "normal",
             color: "rgb(47, 77, 90)",
-            fontSize: "16px",
-            lineHeight: "19px",
+            fontSize: "15px",
+            lineHeight: "18px",
             textAlign: "center",
-            marginBottom: "0.25rem",
+            marginBottom: "0.18rem",
           }}
         >
           {name}
@@ -66,10 +58,10 @@ function ConvenerCard({ name, title, institution, image }: ConvenerCardProps    
             fontWeight: 400,
             fontStyle: "italic",
             color: "rgb(47, 77, 90)",
-            fontSize: "13px",
-            lineHeight: "20px",
+            fontSize: "12.5px",
+            lineHeight: "18px",
             textAlign: "center",
-            marginBottom: "0.25rem",
+            marginBottom: "0.15rem",
           }}
         >
           {title}
@@ -80,8 +72,8 @@ function ConvenerCard({ name, title, institution, image }: ConvenerCardProps    
             fontWeight: 400,
             fontStyle: "italic",
             color: "rgb(47, 77, 90)",
-            fontSize: "13px",
-            lineHeight: "20px",
+            fontSize: "12.5px",
+            lineHeight: "18px",
             textAlign: "center",
           }}
         >
@@ -91,6 +83,7 @@ function ConvenerCard({ name, title, institution, image }: ConvenerCardProps    
     </div>
   );
 }
+
 
 
 export default function Conveners() {

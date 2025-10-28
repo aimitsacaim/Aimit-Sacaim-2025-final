@@ -3,60 +3,150 @@
 const tracks = [
   {
     number: 1,
-    title: 'AI in Diagnostics & Predictive Analytics',
+    title: 'Data Intensive Computing',
     topics: [
-      'Early Disease Detection',
-      'AI in Medical Imaging',
-      'Predictive Patient Outcomes',
-      'Clinical Decision Support',
-      'Chronic Disease Management',
-    ],
+      'Distributed Computing',
+      'High Performance Computing',
+      'Enterprise Cloud Computing',
+      'Cloud Infrastructure Management',
+      'Dependable Autonomic Computing',
+      'Embedded Systems and Software',
+      'Grid, Cluster Computing',
+      'Heterogeneous Computing',
+      'Parallel and Green Computing',
+      'Human Computer Interaction',
+      'Augmented / Virtual Reality',
+      'Indic Computing'
+    ]
   },
   {
     number: 2,
-    title: 'AI in Personalized Medicine & Treatment',
+    title: 'Networks and Information Security',
     topics: [
-      'Genomics & Personalized Care',
-      'AI in Drug Discovery',
-      'Adaptive Treatment Models',
-      'Precision Medicine Case Studies',
-      'AI in Robotic Surgery',
-    ],
+      'Computer Architecture & Engineering',
+      'Ubiquitous and Pervasive Computing',
+      'Wireless, Sensor Networks & Security',
+      'Reconfigurable Systems and Algorithms',
+      'Intelligent and Context aware computing',
+      'Intelligent and Wireless Sensor networks',
+      'Security and Network Management',
+      'Internet Computing & Web Security',
+      'Cryptography and Network Security',
+      'Block Chain Technologies',
+      'Crypto Currency and Security'
+    ]
   },
   {
     number: 3,
-    title: 'Remote Monitoring & Telehealth',
+    title: 'Artificial Intelligence & Network Intelligence',
     topics: [
-      'Continuous Patient Monitoring',
-      'AI-Enhanced Telemedicine',
-      'IoT & Home Healthcare',
-      'Predictive Device Maintenance',
-      'Wearables & Remote Care',
-    ],
+      'Computer Vision and Artificial Intelligence',
+      'Computational Intelligence and Soft Computing',
+      'Fuzzy Logic and Fuzzy Systems',
+      'Probabilistic Reasoning',
+      'Genetic Algorithms / Evolutionary Computing',
+      'Machine Learning and Deep Learning for Smart Systems',
+      'Heuristic Planning Strategies and Tools',
+      'Natural Language Processing',
+      'Hybrid Intelligent Systems',
+      'Intelligent Systems Architecture',
+      'Multimedia and Cognitive Informatics',
+      'Pervasive Computing and Ambient Intelligence'
+    ]
   },
   {
     number: 4,
-    title: 'Ethical & Social Implications of AI',
+    title: 'Data Science',
     topics: [
-      'Data Privacy & Security',
-      'Ethical AI in Healthcare',
-      'Regulatory & Legal Issues',
-      'Building Trust in AI',
-      'Social Impact & Equity',
-    ],
+      'Data Science and Statistics',
+      'Actuarial Statistics',
+      'Applied Statistics',
+      'Bayesian Inference',
+      'Biostatistics',
+      'Decision Theory',
+      'Econometrics',
+      'Financial Statistics',
+      'Multivariate Analysis',
+      'Optimization Techniques',
+      'Probability Theory',
+      'Queuing Theory',
+      'Reliability Theory and Modeling',
+      'Statistical Inference',
+      'Stochastic Process and Modeling',
+      'Time Series Analysis'
+    ]
   },
   {
     number: 5,
-    title: 'Brain-Computer Interaction (BCI) in healthcare',
+    title: 'Big Data Analytics & Technology',
     topics: [
-      'Neuroprosthetics and Assistive Devices',
-      'BCIs for Neurological Rehabilitation and Recovery',
-      'BCI-Based Communication Systems',
-      'BCI-Driven Cognitive Enhancement and Mental Health',
-      'Diagnostic and Monitoring Applications of BCIs',
-    ],
+      'Big Data Analytics & Applications',
+      'Big Data Technology and Computing',
+      'Social Media Analytics',
+      'Advanced Database Management System',
+      'Data Warehousing and Data Mining',
+      'Business Intelligence',
+      'Predictive Analytics and Big Data',
+      'Big Data Visualization Techniques',
+      'Marketing Analytics',
+      'Web Data and Text Mining',
+      'Data and Information Retrieval',
+      'Knowledge Based Expert Systems',
+      'Social Network Analysis',
+      'Sentiment / Opinion Analytics',
+      'Application Oriented Analytics',
+      'Semantic Web Technologies',
+      'Real Time Data Analytics'
+    ]
+  },
+  {
+    number: 6,
+    title: 'Bioinformatics and Computational Biology',
+    topics: [
+      'Bioinformatics and Biological Databases',
+      'Computational Biology',
+      'Biochemistry and Immunology',
+      'Structural Biology / Structural Bioinformatics',
+      'Cell and Molecular Biology',
+      'Systems Biology',
+      'Functional Genomics and Proteomics',
+      'Macromolecular Biophysics',
+      'Molecular Mechanics and Simulation',
+      'Metabolic Engineering',
+      'Synthetic Biology',
+      'Molecular Modeling & Drug Design',
+      'Agricultural Data Mining and Informatics',
+      'Biodiversity & Animal Bioinformatics',
+      'Bioinformatics Applications in Machine Learning',
+      'NGS Informatics and HPC',
+      'Health Informatics',
+      'Bioethics and Biosafety'
+    ]
+  },
+  {
+    number: 7,
+    title: 'Management Science and Humanities',
+    topics: [
+      'Enterprise Information Systems',
+      'E-Business and Virtual Marketing',
+      'Customer Relationship Management',
+      'Decision Support Systems',
+      'Business Process Management',
+      'Supply Chain Management / Operations',
+      'Human Resource Management',
+      'Financial Analysis and Management',
+      'Pricing and Revenue Management',
+      'Retail Operations and Logistics Management',
+      'Enterprise Risk Management',
+      'Quality Control & Six Sigma',
+      'Design Thinking and Applications',
+      'LEAN Systems and Operations',
+      'Creativity and Innovative Practices',
+      'Entrepreneurship Development and Practices'
+    ]
   },
 ];
+
 
 export default function AboutConference() {
   return (
@@ -155,7 +245,7 @@ export default function AboutConference() {
                 maxWidth: '85vw'
             }}
             >
-            The selected papers after the presentation will be published in the prestigious SpringerLink CCIS series.
+            Only the research articles accepted and presented during the conference will be considered for publication. Al accepted and presented papers will be published in an Edited Book with ISBN with DOI for each paper  
           </p>
         </div>
 

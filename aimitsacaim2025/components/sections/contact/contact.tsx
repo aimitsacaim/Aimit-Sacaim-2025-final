@@ -15,13 +15,13 @@ const contactCards = [
   {
     iconType: 'Mail',
     title: 'Email',
-    details: ['hemalatha@staloysius.ac.in'],
+    details: ['sacaim@staloysius.ac.in'],
     isEmail: true,
   },
   {
     iconType: 'Phone',
     title: 'Phone',
-    details: ['+91 94835 76233', '+91 98441 98623'],
+    details: [' +91 9591520632', '+91 9995259225'],
   },
 ];
 

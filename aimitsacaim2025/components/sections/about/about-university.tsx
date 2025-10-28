@@ -74,6 +74,12 @@ export default function AboutUniversity() {
             equipped with the skills and confidence to excel in the ever-evolving technological and business
             landscape.
           </p>
+          <p className="mt-2">
+            Despite being a minority institution, the University has provided high-quality education to individuals from all societal backgrounds, irrespective of caste, color, or creed.
+The university's motto, "Lucet et Ardet," translating to "shine to enkindle," has served as an inspiration for numerous students to become compassionate individuals who bring brightness and happiness into the lives of others.
+Promoting social consciousness and nurturing a heightened sense of social responsibility stands as a cornerstone of the University's mission. We take great pride in our alumni who have evolved into champions of impactful social reform.
+St Aloysius College in its Fourth Cycle of NAAC Accreditation was awarded “A++” Grade with a CGPA of 3.67 out of 4 in January 2023. In the NIRF-2023, Ranking awarded by the Ministry of Education, the College has been ranked 80 among the Colleges in India which is among the featured top 2 colleges of Karnataka. St Aloysius college was granted University Status by UGC in January 2024
+            </p>
         </div>
       </div>
     </section>

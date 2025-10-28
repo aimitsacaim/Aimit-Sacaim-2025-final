@@ -64,10 +64,10 @@ export default function Footer() {
                 <br />
                 <span className="font-bold text-[#022E85]">Email:</span>
                 <a
-                  href="mailto:hemalatha@staloysius.ac.in"
-                  className="ml-1 text-[#022E85] underline hover:text-blue-900"
+                  href="mailto:sacaim@staloysius.ac.in"
+                  className="ml-1 text-[#022E85] hover:text-blue-900"
                 >
-                  hemalatha@staloysius.ac.in
+                  sacaim@staloysius.ac.in
                 </a>
               </div>
               {/* Social icons */}
@@ -154,9 +154,6 @@ export default function Footer() {
         <div className="border-t border-slate-400/20 mt-4 pt-2.5 text-center">
           <p className="text-slate-100 text-[0.85rem] m-0 mb-0.5 font-medium">
             © Copyright <span className="font-bold">AIMIT.</span> All Rights Reserved
-          </p>
-          <p className="text-slate-300 text-[0.83rem] m-0 font-normal">
-            Designed by --- {/* You can add your team/brand here */}
           </p>
         </div>
       </div>
