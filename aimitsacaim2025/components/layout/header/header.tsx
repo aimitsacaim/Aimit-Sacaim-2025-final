@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 
 const navItems = [
-  { label: 'Home', id: 'home' },
-  { label: 'About', id: 'about' },
-  { label: 'Keynote Speakers', id: 'keynote-speakers' },
-  { label: 'Important Dates', id: 'important-dates' },
-  { label: 'Contact', id: 'contact' },
+  { label: 'HOME', id: 'home' },
+  { label: 'ABOUT', id: 'about' },
+  { label: 'KEYNOTE SPEAKERS', id: 'keynote-speakers' },
+  { label: 'IMPORTANT DATES', id: 'important-dates' },
+  { label: 'CONTACT', id: 'contact' },
 ];
 
 export default function Header() {
@@ -74,34 +74,40 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 relative">
         <div className="flex items-center justify-between h-20">
-          {/* Logo / Brand - LARGER & NEW FONT */}
+          {/* Logo / Brand - GEORGIA FONT */}
           <button
             className="flex items-center gap-2 focus:outline-none"
             onClick={handleLogoClick}
             type="button"
             aria-label="Go to home"
           >
-            <div className="text-white text-3xl font-black tracking-wider" style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '0.1em' }}>
+            <div className="text-white text-3xl font-black tracking-wider" style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.1em' }}>
               SACAIM
             </div>
           </button>
 
-          {/* Desktop Navigation Items - EVEN LARGER SIZE */}
+          {/* Desktop Navigation Items - UNDERLINE ON HOVER */}
           <div className="hidden lg:flex items-center gap-4">
             {navItems.slice(1).map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id, index + 1)}
-                className={`relative px-6 py-3 text-lg font-bold transition-all duration-300 rounded-lg ${
+                className={`relative px-6 py-3 text-lg font-bold transition-all duration-300 group ${
                   activeIndex === index + 1
-                    ? 'text-white bg-white/20 shadow-lg'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
+                    ? 'text-white'
+                    : 'text-white/90 hover:text-white'
                 }`}
                 type="button"
+                style={{ fontFamily: 'Georgia, serif' }}
               >
                 <span className="relative z-10">{item.label}</span>
+                {/* Active underline */}
                 {activeIndex === index + 1 && (
-                  <div className="absolute inset-0 bg-white/10 rounded-lg animate-pulse" />
+                  <div className="absolute bottom-2 left-6 right-6 h-0.5 bg-white" />
+                )}
+                {/* Hover underline - only when NOT active */}
+                {activeIndex !== index + 1 && (
+                  <div className="absolute bottom-2 left-6 right-6 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                 )}
               </button>
             ))}
@@ -120,7 +126,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Drawer/Dropdown Menu */}
+        {/* Mobile Drawer/Dropdown Menu - GEORGIA FONT */}
         {mobileOpen && (
           <div className="lg:hidden absolute top-20 inset-x-0 bg-[#022e85] shadow-xl flex flex-col py-2 z-50 border-b border-white/10 animate-fadeIn">
             {navItems.slice(1).map((item, index) => (
@@ -133,19 +139,13 @@ export default function Header() {
                     : 'text-white/90 hover:bg-white/10'
                 }`}
                 type="button"
+                style={{ fontFamily: 'Georgia, serif' }}
               >
                 {item.label}
               </button>
             ))}
           </div>
         )}
-
-        {/* Background Floating Dots */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-4 left-1/4 w-2 h-2 bg-white/20 rounded-full animate-pulse" />
-          <div className="absolute top-8 right-1/3 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse delay-75" />
-          <div className="absolute bottom-4 right-1/4 w-2 h-2 bg-white/20 rounded-full animate-pulse delay-150" />
-        </div>
       </div>
     </nav>
   );
