@@ -5,11 +5,13 @@ const conveners = [
     name: 'Dr Hemalatha N',
     title: 'Dean',
     institution: 'School of Information Science & Technology St Aloysius (Deemed to be University) Institute of Management and IT',
+    image: '/conveners/naushida-white-bg.png',
   },
   {
     name: 'Dr Rakesh Kumar',
     title: 'Associate Professor, HOD (MSc BDA & Data Science)',
     institution: 'School of Information Science & Technology St Aloysius (Deemed to be University) Institute of Management and IT',
+    image: '/conveners/gana-white-bg.png',
   },
 ];
 

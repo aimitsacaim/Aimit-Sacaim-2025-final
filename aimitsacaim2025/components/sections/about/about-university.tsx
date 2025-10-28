@@ -10,7 +10,7 @@ export default function AboutUniversity() {
   }, []);
 
   return (
-    <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] min-h-[600px] flex items-center justify-center p-0 overflow-hidden">
+    <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] min-h-[400px] md:min-h-[420px] flex items-center justify-center p-0 overflow-hidden">
       {/* Dark overlay with fade-in */}
       <div 
         className={`absolute inset-0 w-full h-full bg-slate-900/85 transition-opacity duration-1000 ${
@@ -54,37 +54,25 @@ export default function AboutUniversity() {
 
           {/* Paragraphs */}
           <p className="mb-2">
-            St. Aloysius Institutions, Mangalore, established in 1880 prides itself in its history of 144 years.
-            Thousands of students who have passed through the portals of this institution have rendered outstanding service to humankind not only in India but across the globe.
-            St Aloysius (Deemed to be University) belongs to a network of educational institutions administered by the members of the Society of Jesus, a religious order which runs schools, colleges and universities in more than 105 countries in the world.
-            The members of the order, popularly known as Jesuits, have acquired a reputation for excellence in the quality of education. Some of the distinguished Jesuit institutions of higher education in India are St Xavier's College in Kolkata, St Xavier's College in Mumbai, Loyola College in Chennai, St Joseph's College in Trichy, Xavier Institute of Labour Relations (XLRI) in Jamshedpur, and Xavier University in Bhuvaneswar.
-            These and many other highly acclaimed centres of learning are managed by the Jesuits and deeply rooted in Jesuit values of commitment and excellence.
+            St. Aloysius Deemed to be University, established in 1880 by the Society of Jesus in Mangaluru,
+            Karnataka, is a distinguished institution known for its commitment to academic excelence and holistic
+            education. With a strong Jesuit tradition, the university offers a diverse range of undergraduate,
+            postgraduate, and doctoral programs across various disciplines, including arts, science, commerce,
+            and management. Emphasizing research, innovation, and social responsibility, the university provides a
+            vibrant learning environment supported by modern infrastructure, making it a leading center for
+            higher education in India.
           </p>
 
           <p className="mt-2">
-            Despite being a minority institution, the University has provided high-quality education to individuals from all societal backgrounds, irrespective of caste, color, or creed.             The university's motto, "Lucet et Ardet," translating to "shine to enkindle," has served as an inspiration for numerous students to become compassionate individuals who bring brightness and happiness into the lives of others.
-          </p>
-
-          <p className="mt-2">
-            Promoting social consciousness and nurturing a heightened sense of social responsibility stands as a cornerstone of the University's mission. We take great pride in our alumni who have evolved into champions of impactful social reform.
-          </p>
-
-          <p className="mt-2">
-            St Aloysius College in its Fourth Cycle of NAAC Accreditation was awarded "A++" Grade with a CGPA of 3.67 out of 4 in January 2023.
-            In the NIRF-2023, Ranking awarded by the Ministry of Education, the College has been ranked 80 among the Colleges in India which is among the featured top 2 colleges of Karnataka.
-            St Aloysius college was granted University Status by UGC in January 2024.
-          </p>
-
-          <p className="mt-2">
-            St. Aloysius (Deemed to be University) Institute of Management & Information Technology (AIMIT) serves as the latest campus for MBA and IT programs.
-            It encompasses a range of IT courses, including MCA, MSc (Software Technology), MSc (Big Data Analytics), MSc (Data Science), and MSc (Bioinformatics).
-          </p>
-
-          <p className="mt-2 mb-0">
-            At AIMIT, our priority is our students.
-            Each of our programs is meticulously crafted with your career advancement in mind.
-            We provide outstanding education, ample opportunities to interact with industry professionals, top-notch facilities, and access to a continuously expanding alumni network.
-            The AIMIT experience is aimed at moulding graduates into well-rounded, self-assured, and proficient professionals, empowering them to make a positive impact both in their workplace and community.
+            St. Aloysius Institute of Management and Information Technology (AIMIT) serves as the premier
+            extended campus of St. Aloysius Deemed to be University, dedicated to excelence in Management
+            and Information Technology education. The institute offers a range of postgraduate programs,
+            including MCA, MSc (Software Technology), MSc (Big Data Analytics), MSc (Data Science), and
+            MBA. With state-of-the-art laboratories, modern infrastructure, and a team of experienced faculty,
+            AIMIT blends strong theoretical foundations with hands-on practical learning. Through strategic
+            industry partnerships, internships, and professional workshops, the institute ensures that students are
+            equipped with the skills and confidence to excel in the ever-evolving technological and business
+            landscape.
           </p>
         </div>
       </div>

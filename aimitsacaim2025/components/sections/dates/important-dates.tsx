@@ -1,11 +1,11 @@
 'use client';
 
 const dates = [
-  { event: 'Last Date For Paper Submission', date: '31st January 2025', isDeadline: false },
-  { event: 'Notification of Acceptance', date: '2nd March 2025', isDeadline: false },
-  { event: 'Camera Ready Paper Submission', date: '5th March 2025', isDeadline: false },
-  { event: 'Release of Presentation Schedule', date: '10th March 2025', isDeadline: false },
-  { event: 'Conference Dates', date: '20th & 21st, March, 2025', isDeadline: false },
+  { event: 'Submission of Research Articles :', date: '16th October, 2025 ', isDeadline: false },
+  { event: 'Notification of Acceptance :', date: '18th October, 2025', isDeadline: false },
+  { event: 'Camera Ready Copy/Poster Submission :', date: '24th October, 2025', isDeadline: false },
+  { event: 'Last Date for Participant Registration :', date: '27th October, 2025', isDeadline: false },
+  { event: 'Conference Dates :', date: '30th & 31st, October, 2025', isDeadline: false },
 ];
 
 export default function ImportantDates() {

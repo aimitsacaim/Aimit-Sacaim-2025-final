@@ -6,17 +6,17 @@ export default function HeroBanner() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    setIsVisible(true);
-    const handleMouseMove = (e) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 100,
-        y: (e.clientY / window.innerHeight) * 100,
-      });
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+useEffect(() => {
+  setIsVisible(true);
+  const handleMouseMove = (e: MouseEvent) => {  // Explicit type here
+    setMousePosition({
+      x: (e.clientX / window.innerWidth) * 100,
+      y: (e.clientY / window.innerHeight) * 100,
+    });
+  };
+  window.addEventListener('mousemove', handleMouseMove);
+  return () => window.removeEventListener('mousemove', handleMouseMove);
+}, []);
 
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
@@ -53,7 +53,7 @@ export default function HeroBanner() {
             min-[375px]:text-3xl
             sm:text-4xl
             md:text-[52px]
-            md:leading-[56px]
+            md:leading-14
           "
           style={{
             fontFamily: "'Raleway', sans-serif",
@@ -94,7 +94,7 @@ export default function HeroBanner() {
             letterSpacing: '0.02em',
           }}
         >
-          (ICAIH-2025)
+          (SACAIM 2025)
         </h2>
 
 <div
@@ -152,19 +152,20 @@ export default function HeroBanner() {
 
 
         <div className="flex items-center justify-center w-full mt-2">
-          <img
-            src="/springer.png"
-            alt="Springer CCIS"
-            style={{
-              height: '150px',
-              maxWidth: 320,
-              objectFit: 'contain',
-              background: '#fff',
-              boxShadow: '0 6px 32px 0 rgba(46,69,117,0.07)'
-            }}
-            className="mx-auto mb-4 mt-0 p-2 rounded"
-          />
-        </div>
+            <img
+                src="/springer.png"
+                alt="Springer CCIS"
+                srcSet="/springer.png 220w, /springer.png 340w"
+                sizes="(max-width: 767px) 220px, 340px"
+                style={{
+                objectFit: 'contain',
+                background: '#fff',
+                boxShadow: '0 6px 32px 0 rgba(46,69,117,0.07)',
+                }}
+                className="mx-auto mb-4 mt-0 p-2 rounded"
+            />
+            </div>
+
       </div>
 
       {/* Scroll Indicator at Bottom */}

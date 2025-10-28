@@ -95,10 +95,12 @@ export default function AboutConference() {
             }}
             className="mx-auto text-gray-700 font-semibold max-w-[85vw]"
         >
-          St Aloysius (Deemed to be University) is organizing two days International Conference on{' '}
-          <strong>International Conference on Artificial Intelligence in Healthcare (ICAIH-2025)</strong>{' '}
-          which deals with the advanced technologies and optimizing solutions in various disciplines of Computer Science,
-          Artificial Intelligence, Machine Learning and various fields of Engineering.
+          The theme of the international conference SACAIM 2025 focuses on the various aspects of
+ Innovation in Technology, Computing and Inteligence in the global scenario. Trends in Computer
+ Science and their consequences make Engineering Technology research significantly emphasis on
+ competitive Technologies and Innovative ideas. The primary goal of the conference is to encourage
+ and facilitate the exchange of knowledge and practices, ultimately resulting in the generation of new
+ ideas.
         </p>
 
         <p
@@ -114,24 +116,14 @@ export default function AboutConference() {
             }}
             className="mx-auto text-gray-700 font-semibold max-w-[85vw]"
         >
-          The objective of the conference is to encourage interdisciplinary Research and promote the usage of Artificial Intelligence in the area of Medicine. This will further help in improving the overall quality of life and hence facilitate the society at large.
-        </p>
-
-        <p
-            style={{
-                fontFamily: "'Open Sans', sans-serif",
-                fontWeight: 400,
-                fontStyle: 'normal',
-                color: 'rgb(68, 68, 68)',
-                fontSize: '18px',
-                lineHeight: '24px',
-                marginBottom: '1.25rem', // ~20px for mb-5
-                maxWidth: '85vw'
-            }}
-            className="mx-auto text-gray-700 font-semibold max-w-[85vw]"
-        >
-          ICAIH-2025 aims to provide opportunity for the researchers to share their ideas and experience with other researchers around the globe. ICAIH-2025 seeks potential research submissions that solicit the state of art applications, innovative methods and analyze unexplored challenges to establish relative solutions.
-        </p>
+ Foreseeing importance and impact of the above, PG Department  of SIST in AIMIT is organizing an
+ International conference to explore innovative ideas and technologies for the benefit of society and
+ research community. The conference provides a forum for the dissemination of original research
+ results, new ideas and practical development experiences. It would quench the thirst of knowledge for
+ learning, educating and research community in diverse application areas. The conference aims to
+ cover diversified areas of Information Technology and hence is divided into Eight different tracks. The
+ sub topics mentioned in each category is only indicative and can be further expanded and explored.
+         </p>
 
         {/* Publication Section */}
         <div className="mt-7 max-w-[85vw] mx-auto">

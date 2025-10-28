@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="bg-white p-8 rounded-none text-[#263948] shadow-lg border border-[#e0eef3] flex flex-col items-center text-center min-h-[480px] max-w-[700px] w-full mx-auto mt-[-40px]">
             {/* Logo and Title */}
             <Image
-              src="/logo/icaih-logo.png"
+              src="/logo/aloysius-logo.png"
               alt="University Logo"
               width={80}
               height={80}

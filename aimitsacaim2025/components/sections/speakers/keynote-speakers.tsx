@@ -22,19 +22,7 @@ const keynoteSpeakers = [
     name: 'Prof. Tad Gonsalves',
     title: 'Professor',
     institution: 'Dept of Information and Communication Science Faculty of Science and Technology, Sophia University',
-    image: '/images/speakers/default.jpg',
-  },
-  {
-    name: 'Dr. Ludwig Simone',
-    title: 'Professor and Chair',
-    institution: 'Dept. of Computer Science North Dakota State University',
-    image: '/images/speakers/default.jpg',
-  },
-  {
-    name: 'Dr. Damodar Reddy Edla',
-    title: 'Associate Professor & Dean',
-    institution: 'Department of Computer Science & Engineering National Institute of Technology (NIT) Goa',
-    image: '/images/speakers/default.jpg',
+    image: '/keynote/Dr.madhwaraJ-KG.jpg',
   },
 ];
 
@@ -138,7 +126,7 @@ function KeynoteSpeakerCard({ name, title, institution, image } : KeynoteSpeaker
       {/* Info Card (could have different margin or color) */}
 <div
   className={`
-    bg-[#c8e2f7] shadow-lg px-6 pt-6 pb-5
+    bg-white shadow-lg px-6 pt-6 pb-5
     flex flex-col items-center
     -mt-16
     transition-all duration-300
