@@ -36,16 +36,16 @@ const keynoteSpeakers = [
 // LeadershipCard reuses style of KeynoteSpeakerCard and adds heading on top
 function LeadershipCard({ heading, name, title, institution, image }) {
   return (
-    <div className="flex flex-col items-center w-[324px] mx-auto group">
+    <div className="flex flex-col items-center w-[300px] mx-auto group">
       <div
         style={{
           fontFamily: "'Raleway', sans-serif",
           fontWeight: 700,
           fontStyle: 'normal',
           color: 'rgb(2, 46, 133)',
-          fontSize: '32px',
-          lineHeight: '38px',
-          marginBottom: '1rem',
+          fontSize: '29px', // -3px from 32
+          lineHeight: '34px', // -4px from 38
+          marginBottom: '0.9rem', // slightly reduced
           marginTop: 0,
           letterSpacing: '0.01em',
           textTransform: 'uppercase'
@@ -54,19 +54,19 @@ function LeadershipCard({ heading, name, title, institution, image }) {
       >
         {heading}
       </div>
-      <div className="w-[400px] h-[560px] overflow-hidden shadow-md bg-white z-10 relative">
+      <div className="w-[360px] h-[500px] overflow-hidden shadow-md bg-white z-10 relative rounded-xl">
         <img src={image} alt={name} className="object-cover w-full h-full" />
       </div>
-      <div className="bg-white shadow-lg px-6 pt-6 pb-5 flex flex-col items-center -mt-16 transition-all duration-300 w-[360px] group-hover:w-[380px] relative z-20" style={{ minWidth: 0 }}>
+      <div className="bg-white shadow-lg px-5 pt-5 pb-4 flex flex-col items-center -mt-14 transition-all duration-300 w-[310px] group-hover:w-[330px] relative z-20 rounded-xl" style={{ minWidth: 0 }}>
         <h3
           style={{
             fontFamily: "'Raleway', sans-serif",
             fontWeight: 700,
             color: "rgb(47, 77, 90)",
-            fontSize: "16px",
-            lineHeight: "19px",
+            fontSize: "15px",        // 1pt smaller than before
+            lineHeight: "18px",
             textAlign: "center",
-            marginBottom: "0.25rem",
+            marginBottom: "0.18rem",
           }}
         >
           {name}
@@ -78,10 +78,10 @@ function LeadershipCard({ heading, name, title, institution, image }) {
             fontWeight: 400,
             fontStyle: "italic",
             color: "rgb(47, 77, 90)",
-            fontSize: "13px",
-            lineHeight: "20px",
+            fontSize: "12.5px",
+            lineHeight: "18px",
             textAlign: "center",
-            marginBottom: "0.25rem",
+            marginBottom: "0.15rem",
           }}
         >
           {title}
@@ -92,8 +92,8 @@ function LeadershipCard({ heading, name, title, institution, image }) {
             fontWeight: 400,
             fontStyle: "italic",
             color: "rgb(47, 77, 90)",
-            fontSize: "13px",
-            lineHeight: "20px",
+            fontSize: "12.5px",
+            lineHeight: "18px",
             textAlign: "center",
           }}
         >
@@ -106,20 +106,20 @@ function LeadershipCard({ heading, name, title, institution, image }) {
 
 function KeynoteSpeakerCard({ name, title, institution, image }) {
   return (
-    <div className="flex flex-col items-center w-[324px] mx-auto group">
-      <div className="w-[400px] h-[560px] overflow-hidden shadow-md bg-white z-10 relative">
+    <div className="flex flex-col items-center w-[300px] mx-auto group">
+      <div className="w-[360px] h-[500px] overflow-hidden shadow-md bg-white z-10 relative rounded-xl">
         <img src={image} alt={name} className="object-cover w-full h-full" />
       </div>
-      <div className="bg-white shadow-lg px-6 pt-6 pb-5 flex flex-col items-center -mt-16 transition-all duration-300 w-[360px] group-hover:w-[380px] relative z-20" style={{ minWidth: 0 }}>
+      <div className="bg-white shadow-lg px-5 pt-5 pb-4 flex flex-col items-center -mt-14 transition-all duration-300 w-[310px] group-hover:w-[330px] relative z-20 rounded-xl" style={{ minWidth: 0 }}>
         <h3
           style={{
             fontFamily: "'Raleway', sans-serif",
             fontWeight: 700,
             color: "rgb(47, 77, 90)",
-            fontSize: "16px",
-            lineHeight: "19px",
+            fontSize: "15px",
+            lineHeight: "18px",
             textAlign: "center",
-            marginBottom: "0.25rem",
+            marginBottom: "0.18rem",
           }}
         >
           {name}
@@ -131,10 +131,10 @@ function KeynoteSpeakerCard({ name, title, institution, image }) {
             fontWeight: 400,
             fontStyle: "italic",
             color: "rgb(47, 77, 90)",
-            fontSize: "13px",
-            lineHeight: "20px",
+            fontSize: "12.5px",
+            lineHeight: "18px",
             textAlign: "center",
-            marginBottom: "0.25rem",
+            marginBottom: "0.15rem",
           }}
         >
           {title}
@@ -145,8 +145,8 @@ function KeynoteSpeakerCard({ name, title, institution, image }) {
             fontWeight: 400,
             fontStyle: "italic",
             color: "rgb(47, 77, 90)",
-            fontSize: "13px",
-            lineHeight: "20px",
+            fontSize: "12.5px",
+            lineHeight: "18px",
             textAlign: "center",
           }}
         >
