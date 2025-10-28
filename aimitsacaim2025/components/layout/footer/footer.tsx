@@ -25,77 +25,69 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#354b53] text-white overflow-hidden pt-6 pb-3 px-2">
+    <footer className="relative bg-[#354b53] text-white overflow-visible pt-6 pb-3 px-2">
       {/* Main Container */}
       <div className="relative z-10 max-w-[1400px] mx-auto">
 
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-[1rem] pb-6">
 
-          {/* Left Info Card - MUCH WIDER */}
-          <div className="bg-white p-8 rounded-none text-[#263948] shadow-lg border border-[#e0eef3] flex flex-col items-center text-center min-h-[480px] max-w-[700px] w-full mx-auto mt-[-40px]">
-            {/* Logo and Title */}
-            <Image
-              src="/logo/icaih-logo.png"
-              alt="University Logo"
-              width={80}
-              height={80}
-              className="object-contain mb-2"
-            />
+          {/* Left Info Card */}
+          <div className="bg-white rounded-none text-[#263948] shadow-lg border border-[#e0eef3] flex flex-col items-center text-center min-h-[480px] max-w-[700px] w-full mx-auto mt-[-70px] relative overflow-hidden">
+            {/* Light Blue Top Bar */}
+            <div className="w-full h-3 bg-[#93c5fd] absolute top-0 left-0" />
+            
+            <div className="p-8 pt-10 w-full">
+              {/* University Title Image */}
+              <Image
+                src="/image.png"
+                alt="St Aloysius (Deemed to be University) Mangaluru - Institute of Management and IT - AIMIT"
+                width={400}
+                height={100}
+                className="object-contain mb-4"
+              />
 
-            <h3 className="text-[#022E85] text-[2.05rem] font-black m-0 leading-tight text-center" style={{ letterSpacing: 1 }}>
-              ST ALOYSIUS
-            </h3>
-            <p className="text-[#022E85] text-[1rem] m-0 font-bold leading-tight text-center">
-              (DEEMED TO BE UNIVERSITY)
-            </p>
-            <p className="text-[#022E85] text-[1rem] m-0 font-bold leading-tight text-center mb-2">
-              MANGALURU 575003 - INDIA
-            </p>
-
-            <p className="text-[#022E85] text-base font-bold m-0 mb-1 mt-1 text-center">
-              Institute of Management and IT - AIMIT
-            </p>
-            {/* Italic subtitle */}
-            <p className="text-[.99rem] italic font-medium text-gray-700 mt-2 mb-1 text-center">
-              St Aloysius Institute of Management & Information
-              Technology (AIMIT) is the new campus for MBA and IT
-              programmes offered by St Aloysius (Deemed to be University), Mangalore.
-            </p>
-            <p className="text-gray-600 text-center m-0">
-              St Aloysius (Deemed to be University) Institute of Management and IT
-              <br />
-              Beeri, Kotekar, Mangalore-575022
-            </p>
-            <div className="w-full text-center mt-3 mb-3">
-              <span className="font-bold text-[#022E85]">Phone:</span>
-              <span className="ml-1 text-gray-700">91 8242286881/82</span>
-              <br />
-              <span className="font-bold text-[#022E85]">Email:</span>
-              <a
-                href="mailto:hemalatha@staloysius.ac.in"
-                className="ml-1 text-[#022E85] underline hover:text-blue-900"
-              >
-                hemalatha@staloysius.ac.in
-              </a>
-            </div>
-            {/* Social icons */}
-            <div className="flex justify-center gap-6 mt-3">
-              {socialLinks.map((social, idx) => {
-                const IconComponent = social.icon;
-                return (
-                  <a
-                    key={idx}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="w-[36px] h-[36px] rounded-full flex items-center justify-center bg-[#e1e9f5] hover:bg-[#022E85] transition-all duration-200 group"
-                  >
-                    <IconComponent className="text-[#022E85] group-hover:text-white transition-all duration-200" size={22} />
-                  </a>
-                );
-              })}
+              {/* Italic subtitle */}
+              <p className="text-[.99rem] italic font-medium text-gray-700 mt-2 mb-1 text-center">
+                St Aloysius Institute of Management & Information
+                Technology (AIMIT) is the new campus for MBA and IT
+                programmes offered by St Aloysius (Deemed to be University), Mangalore.
+              </p>
+              <p className="text-gray-600 text-center m-0">
+                St Aloysius (Deemed to be University) Institute of Management and IT
+                <br />
+                Beeri, Kotekar, Mangalore-575022
+              </p>
+              <div className="w-full text-center mt-3 mb-3">
+                <span className="font-bold text-[#022E85]">Phone:</span>
+                <span className="ml-1 text-gray-700">91 8242286881/82</span>
+                <br />
+                <span className="font-bold text-[#022E85]">Email:</span>
+                <a
+                  href="mailto:hemalatha@staloysius.ac.in"
+                  className="ml-1 text-[#022E85] underline hover:text-blue-900"
+                >
+                  hemalatha@staloysius.ac.in
+                </a>
+              </div>
+              {/* Social icons */}
+              <div className="flex justify-center gap-6 mt-3">
+                {socialLinks.map((social, idx) => {
+                  const IconComponent = social.icon;
+                  return (
+                    <a
+                      key={idx}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.label}
+                      className="w-[36px] h-[36px] rounded-full flex items-center justify-center bg-[#e1e9f5] hover:bg-[#022E85] transition-all duration-200 group"
+                    >
+                      <IconComponent className="text-[#022E85] group-hover:text-white transition-all duration-200" size={22} />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
