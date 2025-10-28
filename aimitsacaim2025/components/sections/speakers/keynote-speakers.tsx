@@ -33,8 +33,23 @@ const keynoteSpeakers = [
   },
 ];
 
+interface LeadershipCardProps {
+  heading: string;
+  name: string;
+  title: string;
+  institution: string;
+  image: string;
+}
+
+interface KeynoteSpeakerCardProps {
+  name: string;
+  title: string;
+  institution: string;
+  image: string;
+}
+
 // LeadershipCard reuses style of KeynoteSpeakerCard and adds heading on top
-function LeadershipCard({ heading, name, title, institution, image }) {
+function LeadershipCard({ heading, name, title, institution, image }: LeadershipCardProps) {
   return (
     <div className="flex flex-col items-center w-[300px] mx-auto group">
       <div
@@ -104,7 +119,7 @@ function LeadershipCard({ heading, name, title, institution, image }) {
   );
 }
 
-function KeynoteSpeakerCard({ name, title, institution, image }) {
+function KeynoteSpeakerCard({ name, title, institution, image }: KeynoteSpeakerCardProps) {
   return (
     <div className="flex flex-col items-center w-[300px] mx-auto group">
       <div className="w-[360px] h-[500px] overflow-hidden shadow-md bg-white z-10 relative rounded-xl">
