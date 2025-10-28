@@ -99,7 +99,7 @@ useEffect(() => {
             letterSpacing: '0.02em',
           }}
         >
-          (SACAIM 2025)
+          SACAIM 2025
         </h2>
 
 <div
@@ -124,11 +124,13 @@ useEffect(() => {
     marginBottom: '1.2rem',
   }}
 >
-  ORGANIZED BY SCHOOL OF INFORMATION SCIENCE AND TECHNOLOGY
+  ORGANIZED BY 
   <br />
-  DEPARTMENT OF MCA, MSc(ST, BI, BDA, DS)
+  SCHOOL OF INFORMATION SCIENCE AND TECHNOLOGY  DEPARTMENT 
   <br />
-  AIMIT CENTRE, BEERI
+ OF MCA, MSc(ST, BI, BDA, DS)  AIMIT CENTRE, BEERI
+ 
+
 </div>
 
 <p

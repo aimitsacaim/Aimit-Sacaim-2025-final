@@ -11,9 +11,9 @@ const usefulLinks = [
 ];
 
 const featuredLinks = [
-  { text: 'Gallery', external: true, url: 'https://www.aimit.edu.in/' },
-  { text: 'SACAIM 2025', id: 'sacaim-2025' },
-  { text: 'Our Achievements', id: 'achievements' },
+
+  { text: 'SACAIM 2024', id: 'sacaim-2024', external: true, url: 'https://www.aimit.edu.in/sacaim-2024-inaugurated-a-confluence-of-knowledge-innovation-and-inspiration/' },
+ 
   { text: 'Admissions', external: true, url: 'https://www.aimit.edu.in/admission/' },
 ];
 
@@ -95,7 +95,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row w-full items-start justify-center gap-8 pl-3">
             {/* Useful Links */}
             <div>
-              <h4 className="text-white text-lg font-bold mb-2 border-b-2 border-blue-400 pb-1">
+              <h4 className="text-white text-lg font-bold mb-3 pb-2 border-b border-white/30">
                 Useful Links
               </h4>
               <ul className="list-none p-0 m-0">
@@ -103,9 +103,9 @@ export default function Footer() {
                   <li key={idx} className="mb-2">
                     <a
                       href={`#${link.id}`}
-                      className="text-slate-100 no-underline text-base font-medium flex items-center hover:text-blue-300 transition-colors"
+                      className="text-slate-200 no-underline text-base font-normal flex items-center hover:text-white hover:underline transition-colors"
                     >
-                      <span className="mr-2 text-blue-400 text-[1rem] font-bold">▶</span>
+                      <span className="mr-2 text-white">•</span>
                       {link.text}
                     </a>
                   </li>
@@ -114,7 +114,7 @@ export default function Footer() {
             </div>
             {/* Featured Links */}
             <div>
-              <h4 className="text-white text-lg font-bold mb-2 border-b-2 border-emerald-400 pb-1">
+              <h4 className="text-white text-lg font-bold mb-3 pb-2 border-b border-white/30">
                 Featured Links
               </h4>
               <ul className="list-none p-0 m-0">
@@ -124,9 +124,9 @@ export default function Footer() {
                       href={link.external ? link.url : `#${link.id}`}
                       target={link.external ? '_blank' : undefined}
                       rel={link.external ? 'noopener noreferrer' : undefined}
-                      className="text-slate-100 no-underline text-base font-medium flex items-center hover:text-emerald-300 transition-colors"
+                      className="text-slate-200 no-underline text-base font-normal flex items-center hover:text-white hover:underline transition-colors"
                     >
-                      <span className="mr-2 text-emerald-400 text-[1rem] font-bold">▶</span>
+                      <span className="mr-2 text-white">•</span>
                       {link.text}
                     </a>
                   </li>
