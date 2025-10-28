@@ -8,14 +8,12 @@ export default function HeroBanner() {
 
   useEffect(() => {
     setIsVisible(true);
-
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = (e) => {
       setMousePosition({
         x: (e.clientX / window.innerWidth) * 100,
         y: (e.clientY / window.innerHeight) * 100,
       });
     };
-
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
@@ -29,9 +27,7 @@ export default function HeroBanner() {
 
   return (
     <div className="relative h-screen w-full flex items-start justify-center overflow-hidden">
-      {/* Removed particle background */}
-
-      {/* Parallax overlay tint */}
+      {/* Overlay */}
       <div
         className="absolute inset-0"
         style={{
@@ -42,92 +38,139 @@ export default function HeroBanner() {
       />
 
       {/* Hero content */}
-      <div className={`relative z-20 text-center w-full pt-44 transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} px-2`}>
+      <div
+        className={`relative z-20 text-center w-full pt-24 sm:pt-32 md:pt-44 transition-all duration-1000
+         ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} px-3 flex flex-col items-center`}
+      >
         <h1
-            style={{
-                fontFamily: "'Raleway', sans-serif",
-                fontWeight: 700,
-                fontSize: '52px',
-                lineHeight: '56px',
-                color: 'rgba(255,255,255,0.94)',
-                textShadow: '0 6px 8px rgba(0,0,0,0.48), 0 2px 4px rgba(0,0,0,0.52)',
-                margin: 0,
-                marginBottom: '1rem',
-                letterSpacing: '0.02em'
-            }}
-            >
-            <span>INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE</span>
-            <br />
-            <span style={{ display: "inline-block", marginTop: "0.3em", marginBottom: "0.2em" }}>
-                IN HEALTH CARE
-            </span>
+          className="
+            font-bold
+            md:font-extrabold
+            text-white
+            leading-tight
+            mx-auto
+            text-[2.2rem]
+            min-[375px]:text-3xl
+            sm:text-4xl
+            md:text-[52px]
+            md:leading-[56px]
+          "
+          style={{
+            fontFamily: "'Raleway', sans-serif",
+            textShadow: '0 6px 8px rgba(0,0,0,0.48), 0 2px 4px rgba(0,0,0,0.52)',
+            margin: 0,
+            marginBottom: '1rem',
+            letterSpacing: '0.02em',
+          }}
+        >
+          <span className="block md:inline">
+            INTERNATIONAL CONFERENCE ON ADVANCED IT,
+          </span>
+          <br className="hidden md:block" />
+          <span
+            className="block md:inline"
+            style={{ display: "inline-block", marginTop: "0.3em", marginBottom: "0.2em" }}
+          >
+            ENGINEERING AND MANAGEMENT
+          </span>
         </h1>
 
         <h2
-            style={{
-                fontFamily: "'PT Serif', serif",
-                fontWeight: 700,
-                fontSize: '52px',
-                lineHeight: '56px',
-                color: 'rgb(2, 46, 133)',
-                textShadow: "0 3px 14px rgba(30,64,175,0.24)",
-                marginTop: '1.5rem',
-                marginBottom: '5rem',
-                letterSpacing: '0.02em'
-            }}
-            >
-            (ICAIH-2025)
+          className="
+            font-bold
+            text-[2rem]
+            min-[375px]:text-[2.3rem]
+            sm:text-[2.5rem]
+            md:text-[52px]
+            leading-tight
+            mx-auto
+          "
+          style={{
+            fontFamily: "'PT Serif', serif",
+            color: 'rgb(2, 46, 133)',
+            textShadow: "0 3px 14px rgba(30,64,175,0.24)",
+            marginTop: '1.5rem',
+            marginBottom: '2.5rem',
+            letterSpacing: '0.02em',
+          }}
+        >
+          (ICAIH-2025)
         </h2>
 
-        <div
-            style={{
-                fontFamily: "'Raleway', sans-serif",
-                fontWeight: 700,
-                fontSize: '28px',
-                lineHeight: '34px',
-                color: 'rgba(255,255,255,0.94)',
-                letterSpacing: '0.02em',
-                marginTop: 0,
-                marginBottom: '3rem',
-                textShadow: '0 4px 8px rgba(0,0,0,0.48), 0 2px 4px rgba(0,0,0,0.52)'
-            }}
-            >
-            ST ALOYSIUS (DEEMED TO BE UNIVERSITY) INSTITUTE OF MANAGEMENT AND IT
-        </div>
+<div
+  className="
+    font-bold
+    text-base
+    min-[375px]:text-lg
+    sm:text-xl
+    md:text-[28px]
+    md:leading-[34px]
+    text-white
+    mb-3
+    mx-auto
+    max-w-full
+    md:max-w-none
+    md:whitespace-nowrap
+  "
+  style={{
+    fontFamily: "'Raleway', sans-serif",
+    letterSpacing: '0.02em',
+    textShadow: '0 4px 8px rgba(0,0,0,0.48), 0 2px 4px rgba(0,0,0,0.52)',
+    marginTop: 0,
+    marginBottom: '1.2rem',
+  }}
+>
+  ST ALOYSIUS (DEEMED TO BE UNIVERSITY) INSTITUTE OF MANAGEMENT AND IT
+</div>
 
 
+<p
+  className="
+    font-bold
+    text-base
+    min-[375px]:text-lg
+    sm:text-xl
+    md:text-[28px]
+    md:leading-[34px]
+    text-white
+    mb-6
+    mx-auto
+    max-w-[340px]
+    md:max-w-none
+    md:whitespace-nowrap
+  "
+  style={{
+    fontFamily: "'Raleway', sans-serif",
+    letterSpacing: '0.02em',
+    textShadow: '0 4px 8px rgba(0,0,0,0.48), 0 2px 4px rgba(0,0,0,0.48)',
+    marginBottom: '2rem',
+    marginTop: 0,
+  }}
+>
+  20TH & 21ST, MARCH, 2025
+</p>
 
-        <p
-        style={{
-            fontFamily: "'Raleway', sans-serif",
-            fontWeight: 700,
-            fontSize: '28px',
-            lineHeight: '34px',
-            color: 'rgba(255,255,255,0.94)',
-            letterSpacing: '0.02em',
-            marginBottom: '2rem',
-            marginTop: 0,
-            textShadow: '0 4px 8px rgba(0,0,0,0.48), 0 2px 4px rgba(0,0,0,0.48)'
-        }}
-        >
-        20TH & 21ST, MARCH, 2025
-        </p>
 
-
-
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full mt-2">
           <img
-            src="/springer.png" // Update with your image path
+            src="/springer.png"
             alt="Springer CCIS"
-            style={{ height: '130px', objectFit: 'contain', background: '#fff', boxShadow: '0 6px 32px 0 rgba(46,69,117,0.04)' }}
-            className="mx-auto mb-4 mt-3 p-3"
+            style={{
+              height: '150px',
+              maxWidth: 320,
+              objectFit: 'contain',
+              background: '#fff',
+              boxShadow: '0 6px 32px 0 rgba(46,69,117,0.07)'
+            }}
+            className="mx-auto mb-4 mt-0 p-2 rounded"
           />
         </div>
       </div>
 
       {/* Scroll Indicator at Bottom */}
       <div
-        className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-1000 delay-1400 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-1000 delay-1400
+          ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         onClick={scrollToNext}
       >
         <div className="flex flex-col items-center animate-bounce">
