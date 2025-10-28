@@ -51,13 +51,13 @@ export default function Contact() {
         <div className="mx-auto mb-4 w-[55px] h-[3px] bg-blue-800 rounded" />
 
         {/* Cards Row */}
-        <div className="flex flex-row justify-center items-stretch gap-8 mt-8 w-full">
-          {contactCards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-100 rounded-2xl shadow-md min-w-[280px] w-[380px] flex flex-col items-center px-6 py-4 text-center"
-              style={{ minHeight: 130 }} // shorter height
-            >
+<div className="flex flex-col md:flex-row justify-center items-stretch gap-8 mt-8 w-full">
+  {contactCards.map((card, index) => (
+    <div
+      key={index}
+      className="bg-white border border-gray-100 rounded-2xl shadow-md min-w-[220px] w-full md:w-[380px] flex flex-col items-center px-6 py-4 text-center"
+      style={{ minHeight: 130 }}
+    >
               {/* Icon */}
               <div className="mb-3 flex items-center justify-center">
                 {card.iconType === "MapPin" && <MapPin className="w-12 h-12" strokeWidth={2} style={{ color: "#1259e6" }} />}
