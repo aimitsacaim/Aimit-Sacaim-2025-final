@@ -47,7 +47,7 @@ interface KeynoteSpeakerCardProps {
   institution: string;
   image: string;
 }
-//triggering deployment
+//triggering deployment 2
 // LeadershipCard reuses style of KeynoteSpeakerCard and adds heading on top
 function LeadershipCard({ heading, name, title, institution, image }: LeadershipCardProps) {
   return (
