@@ -26,10 +26,10 @@ const conferenceRoles = [
 
 const keynoteSpeakers = [
   {
-    name: 'Dr.MADHWARAJ K G',
-    title: 'Professor and HOD MCA Department',
-    institution: 'Mangalore Institute of Technology and Engineering',
-    image: '/keynote/Dr.madhwaraJ-KG.jpg',
+    name: 'Dr Sreeja Rajesh',
+    title: 'Associate Professor, Information Science & Engineering, Mangalore',
+    institution: 'Institute of Technology & Engineering, Moodabidri',
+    image: '/keynote/Dr Sreeja Rajesh.jpg',
   },
 ];
 
