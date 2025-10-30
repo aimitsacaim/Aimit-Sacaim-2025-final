@@ -29,7 +29,7 @@ const keynoteSpeakers = [
     name: 'Dr. Rohini R Rao',
     title: 'Associate Professor',
     institution: 'School of Computer Engineering',
-    image: '/keynote/Dr.Rohini-R-Rao.jpg',
+    image: '/keynote/Dr.Rohini.jpeg',
   },
 ];
 
