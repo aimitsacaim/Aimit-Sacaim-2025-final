@@ -26,10 +26,10 @@ const conferenceRoles = [
 
 const keynoteSpeakers = [
   {
-    name: 'Dr.MADHWARAJ K G',
-    title: 'Professor and HOD MCA Department',
-    institution: 'Mangalore Institute of Technology and Engineering',
-    image: '/keynote/Dr.madhwaraJ-KG.jpg',
+    name: 'Dr. Rohini R Rao',
+    title: 'Associate Professor',
+    institution: 'School of Computer Engineering',
+    image: '/keynote/Dr.Rohini-R-Rao.jpg',
   },
 ];
 
